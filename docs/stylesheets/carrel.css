@@ -1,0 +1,73 @@
+/* carrel brand on mkdocs-material — palette source of truth: docs/BRAND.md.
+   Dark-only ("slate"). Override md-* custom properties only. */
+
+:root {
+  --carrel-ink:       #14100A;
+  --carrel-walnut:    #211A11;
+  --carrel-umber:     #2C2416;
+  --carrel-grain:     #443826;
+  --carrel-paper:     #F2EADA;
+  --carrel-parchment: #A19278;
+  --carrel-lamplight: #F2A93C;
+  --carrel-brass:     #B07C24;
+  --carrel-dusk:      #6E9EBF;
+
+  /* system stacks only (BRAND.md §Typography) */
+  --md-text-font: ui-sans-serif, -apple-system, "Segoe UI", Roboto,
+                  "Helvetica Neue", Arial, sans-serif;
+  --md-code-font: ui-monospace, "Cascadia Code", Menlo, Consolas,
+                  "Liberation Mono", monospace;
+}
+
+[data-md-color-scheme="slate"] {
+  /* surfaces: everything sits on Ink; header/footer are Walnut */
+  --md-default-bg-color:             var(--carrel-ink);
+  --md-default-fg-color:             var(--carrel-paper);
+  --md-default-fg-color--light:      #f2eadacc;
+  --md-default-fg-color--lighter:    var(--carrel-parchment);
+  --md-default-fg-color--lightest:   #a1927833;
+
+  --md-primary-fg-color:             var(--carrel-walnut);
+  --md-primary-bg-color:             var(--carrel-paper);
+  --md-primary-bg-color--light:      var(--carrel-parchment);
+
+  --md-accent-fg-color:              var(--carrel-lamplight);
+  --md-accent-fg-color--transparent: #f2a93c1a;
+
+  /* typeset */
+  --md-typeset-color:                var(--carrel-paper);
+  --md-typeset-a-color:              var(--carrel-lamplight);
+  --md-typeset-mark-color:           #f2a93c33;
+  --md-typeset-kbd-color:            var(--carrel-umber);
+  --md-typeset-kbd-accent-color:     var(--carrel-grain);
+  --md-typeset-kbd-border-color:     var(--carrel-grain);
+  --md-typeset-table-color:          #44382680;   /* Grain hairlines */
+
+  /* code: Umber wells, Lamplight/Dusk tokens, Parchment furniture */
+  --md-code-bg-color:                var(--carrel-umber);
+  --md-code-fg-color:                var(--carrel-paper);
+  --md-code-hl-color:                #f2a93c26;
+  --md-code-hl-keyword-color:        var(--carrel-lamplight);
+  --md-code-hl-number-color:         var(--carrel-lamplight);
+  --md-code-hl-special-color:        var(--carrel-brass);
+  --md-code-hl-function-color:       var(--carrel-dusk);
+  --md-code-hl-constant-color:       var(--carrel-dusk);
+  --md-code-hl-string-color:         #9db47a;
+  --md-code-hl-name-color:           var(--carrel-paper);
+  --md-code-hl-variable-color:       var(--carrel-paper);
+  --md-code-hl-operator-color:       var(--carrel-parchment);
+  --md-code-hl-punctuation-color:    var(--carrel-parchment);
+  --md-code-hl-comment-color:        var(--carrel-parchment);
+  --md-code-hl-generic-color:        var(--carrel-parchment);
+
+  /* footer */
+  --md-footer-bg-color:              var(--carrel-walnut);
+  --md-footer-bg-color--dark:        var(--carrel-ink);
+  --md-footer-fg-color:              var(--carrel-paper);
+  --md-footer-fg-color--light:       var(--carrel-parchment);
+}
+
+/* brand: borders are hairlines only */
+[data-md-color-scheme="slate"] .md-typeset hr {
+  border-color: var(--carrel-grain);
+}

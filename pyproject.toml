@@ -22,6 +22,7 @@ carrel = "carrel.cli:main"
 
 [dependency-groups]
 dev = ["pytest>=8.0"]
+docs = ["mkdocs-material>=9.5"]
 
 [build-system]
 requires = ["hatchling"]

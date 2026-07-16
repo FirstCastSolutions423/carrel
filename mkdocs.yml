@@ -1,0 +1,69 @@
+site_name: carrel
+site_description: A library desk for your files — and your agents.
+site_url: https://firstcastsolutions423.github.io/carrel/
+repo_url: https://github.com/FirstCastSolutions423/carrel
+repo_name: FirstCastSolutions423/carrel
+edit_uri: blob/main/docs/
+
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  font: false                    # system stacks only (docs/BRAND.md)
+  palette:
+    scheme: slate                # dark-first brand; single scheme, no toggle
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/carrel.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+
+plugins:
+  - search
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
+nav:
+  - Home: index.md
+  - Using carrel:
+      - Carrel in ten minutes: QUICKSTART.md
+      - Installing: INSTALL.md
+      - Command reference: REFERENCE.md
+      - Configuration: CONFIGURATION.md
+      - Troubleshooting & FAQ: TROUBLESHOOTING.md
+  - The marketplace:
+      - Using the plugins: MARKETPLACE.md
+      - Authoring a plugin: PLUGIN_AUTHORING.md
+      - Agents: AGENTS.md
+  - Inside the build:
+      - How this was built: HOW_THIS_WAS_BUILT.md
+      - Vision: VISION.md
+      - Architecture: ARCHITECTURE.md
+      - Features: FEATURES.md
+      - Build plan: BUILD_PLAN.md
+      - Decisions: DECISIONS.md
+      - Environment: ENVIRONMENT.md
+      - Test report: TEST_REPORT.md
+  - Project:
+      - Brand guide: BRAND.md
+      - Contributing: CONTRIBUTING.md

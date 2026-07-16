@@ -149,7 +149,7 @@ command refuses to clobber existing files without `--force`.
 
 **Where did my index/tags/notes go?** They live in `.carrel/carrel.db` under
 whatever `--root` you used (default: the directory you ran `index` in). See
-[CONFIGURATION.md](CONFIGURATION.md#the-desk-root---root-and-carrel).
+[CONFIGURATION.md](CONFIGURATION.md#the-desk-root-root-and-carrel).
 
 **`fd` vs `fdfind`, `magick` vs `convert`?** Carrel tries both names
 automatically — see
