@@ -16,7 +16,7 @@ required to run the core suite.
 
 ## Coding standards
 
-The binding rules live in [`CLAUDE.md`](../CLAUDE.md) (repo root) and
+The binding rules live in [`CLAUDE.md`](https://github.com/FirstCastSolutions423/carrel/blob/main/CLAUDE.md) (repo root) and
 [ARCHITECTURE.md](ARCHITECTURE.md) §Global contracts. The short version:
 
 - Type hints on public functions, `pathlib.Path` over strings, f-strings, no global

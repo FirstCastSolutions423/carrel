@@ -1,7 +1,7 @@
 # MARKETPLACE — using the carrel plugins in Claude Code
 
 This repo doubles as a Claude Code plugin marketplace: `.claude-plugin/marketplace.json`
-at the root declares five plugins living under [`plugins/`](../plugins/). Everything
+at the root declares five plugins living under [`plugins/`](https://github.com/FirstCastSolutions423/carrel/tree/main/plugins/). Everything
 below was executed on 2026-07-16 (see [TEST_REPORT.md](TEST_REPORT.md) for the original
 proof runs).
 
@@ -63,7 +63,7 @@ then interprets the result conversationally. Safety conventions baked in:
 ## The PostToolUse reindex hook (carrel-agent)
 
 `plugins/carrel-agent/hooks/hooks.json` registers a PostToolUse hook on `Write|Edit`
-that runs [`scripts/reindex.sh`](../plugins/carrel-agent/scripts/reindex.sh). Effect:
+that runs [`scripts/reindex.sh`](https://github.com/FirstCastSolutions423/carrel/blob/main/plugins/carrel-agent/scripts/reindex.sh). Effect:
 whenever Claude writes or edits a file in a project where you have already run
 `carrel index` (i.e. a `.carrel/` desk db exists under the session cwd), the index row
 for that file is refreshed — `carrel search` stays current without re-indexing.

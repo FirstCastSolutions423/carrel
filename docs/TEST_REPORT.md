@@ -27,11 +27,13 @@ Run any of them: `bash examples/cookbook/07-audiobook-from-markdown.sh`
 
 ## Marketplace validation (the hard requirement) — documented flow, executed
 
+(Local paths in this transcript are generalized to `~/projects/...`.)
+
 ```
 $ claude plugin validate .
 ✔ Validation passed                       # marketplace + all 5 plugin manifests
 
-$ claude plugin marketplace add /home/coltonbearden/projects/toolkit-build
+$ claude plugin marketplace add ~/projects/carrel
 ✔ Successfully added marketplace: carrel (declared in user settings)
 
 $ claude plugin install carrel-inspect@carrel

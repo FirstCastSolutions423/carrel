@@ -8,7 +8,7 @@ Prerequisite: carrel installed and on `PATH` ([INSTALL.md](INSTALL.md)).
 Working from the repo instead? Substitute `uv run carrel` everywhere.
 
 Related docs: [Reference](REFERENCE.md) · [Configuration](CONFIGURATION.md) ·
-[Troubleshooting](TROUBLESHOOTING.md) · [README](../README.md)
+[Troubleshooting](TROUBLESHOOTING.md) · [README](https://github.com/FirstCastSolutions423/carrel/blob/main/README.md)
 
 ## 0. Check the room — `doctor`
 
@@ -217,4 +217,4 @@ Action outputs land in `./carrel-out/`. Keys: `q` quit, `/` search, `t` tag,
 - Runnable recipes: `examples/cookbook/` and `snippets/` in the repo.
 - Claude Code integration: the repo doubles as a plugin marketplace
   (`/inspect`, `/pack`, `/watch-folder`, …) — see the repo
-  [README](../README.md).
+  [README](https://github.com/FirstCastSolutions423/carrel/blob/main/README.md).

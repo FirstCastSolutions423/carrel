@@ -2,7 +2,7 @@
 
 How to add a sixth (seventh, ...) plugin to the carrel marketplace so that it validates,
 installs, and passes the repo's tests. Read one existing plugin end-to-end first —
-[`plugins/carrel-inspect/`](../plugins/carrel-inspect/) is the best template.
+[`plugins/carrel-inspect/`](https://github.com/FirstCastSolutions423/carrel/tree/main/plugins/carrel-inspect/) is the best template.
 
 ## Directory layout
 
@@ -116,7 +116,7 @@ commands for real (`claude plugin marketplace add <repo>` →
 
 ## What tests/test_marketplace.py will hold you to
 
-[`tests/test_marketplace.py`](../tests/test_marketplace.py) runs on every `uv run pytest`.
+[`tests/test_marketplace.py`](https://github.com/FirstCastSolutions423/carrel/blob/main/tests/test_marketplace.py) runs on every `uv run pytest`.
 A new plugin must satisfy:
 
 1. **Registration** — `EXPECTED_PLUGINS` at the top of the test file maps plugin name →

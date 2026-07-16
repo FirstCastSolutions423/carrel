@@ -7,7 +7,7 @@ capability and are detected at runtime — nothing breaks when one is missing
 
 Related docs: [Quickstart](QUICKSTART.md) · [Reference](REFERENCE.md) ·
 [Configuration](CONFIGURATION.md) · [Troubleshooting](TROUBLESHOOTING.md) ·
-[README](../README.md)
+[README](https://github.com/FirstCastSolutions423/carrel/blob/main/README.md)
 
 ## Prerequisites
 
