@@ -5,8 +5,8 @@
 
 ## Now
 
-- **Phase:** 4 — Wave 1 DONE (fixtures, core tests, doctor, mcp, pack, edit; 163 tests green; core bugs fixed: lazy --help, hinted require()). Wave 2 dispatching.
-- **Next:** Wave 2: convert, ocr, inspect+diff, index/search/tag/note. Then wave(2) commit.
+- **Phase:** 4 — Waves 1-2 DONE (convert, ocr, inspect, diff, index/search/tag/note added; 318+ tests green; core fix: click Exit passthrough in main()). Wave 3 dispatching.
+- **Next:** Wave 3: thumb/extract-images/proof/color, watch/organize/dedupe, redact/sign/form, marketplace+plugins.
 
 ## Done
 

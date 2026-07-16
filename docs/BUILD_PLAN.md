@@ -13,10 +13,10 @@ Waves of ≤4 parallel subagents. Owner types from `.claude/agents/`. Every task
 
 ## Wave 2 — extraction & desk-db commands (need fixtures)
 
-- [ ] W2.1 convert — **module-builder** — specs/01 — size L
-- [ ] W2.2 ocr — **module-builder** — specs/02 — size S
-- [ ] W2.3 inspect + diff — **module-builder** — specs/03 — size M
-- [ ] W2.4 index + search + tag + note — **module-builder** — specs/06 — size M
+- [x] W2.1 convert — **module-builder** — specs/01 — size L
+- [x] W2.2 ocr — **module-builder** — specs/02 — size S
+- [x] W2.3 inspect + diff — **module-builder** — specs/03 — size M
+- [x] W2.4 index + search + tag + note — **module-builder** — specs/06 — size M
 
 ## Wave 3 — media, automation, documents (need fixtures; marketplace independent)
 

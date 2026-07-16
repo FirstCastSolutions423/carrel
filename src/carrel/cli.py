@@ -80,6 +80,8 @@ def main() -> None:
     debug = "--debug" in sys.argv
     try:
         cli(standalone_mode=False)
+    except click.exceptions.Exit as e:
+        sys.exit(e.exit_code)
     except click.exceptions.Abort:
         sys.exit(1)
     except click.ClickException as e:
