@@ -102,6 +102,8 @@ The flagship: a three-pane [Textual](https://textual.textualize.io/) desk. A fil
 
 ## Learn more
 
+- **[The docs site](https://firstcastsolutions423.github.io/carrel/)** — everything below, browsable
+- [docs/HOW_THIS_WAS_BUILT.md](docs/HOW_THIS_WAS_BUILT.md) — the autonomous single-day build, from the primary sources
 - [docs/VISION.md](docs/VISION.md) — why a library desk, and the product principles
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — the adapter layer, the index, the plugin design
 - [docs/FEATURES.md](docs/FEATURES.md) — the capability × strategy matrix
