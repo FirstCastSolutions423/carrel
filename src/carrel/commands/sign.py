@@ -226,7 +226,9 @@ def manifest(ctx: click.Context, paths: tuple[Path, ...], out: Path, with_gpg: b
     """Write a sha256 manifest for PATHS (directories recurse)."""
     if out.exists() and not force:
         raise CarrelError(f"refusing to overwrite existing file: {out} (pass --force)")
-    files = _collect_files(paths)
+    out_abs = out.resolve()
+    files = [f for f in _collect_files(paths)
+             if f.resolve() not in (out_abs, out_abs.with_suffix(out_abs.suffix + ".asc"))]
     out.parent.mkdir(parents=True, exist_ok=True)
     lines = [f"{_sha256(f)}  {_manifest_entry_path(f, out.parent)}" for f in files]
     out.write_text("\n".join(lines) + "\n", encoding="utf-8")

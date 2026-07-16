@@ -13,7 +13,7 @@ carrel watch DIR --on created,modified [--glob '*.pdf'] --run 'carrel thumb {pat
              [--debounce 500] [--once] [--timeout SECS] [--json-lines]
 ```
 
-- `--on`: comma-separated events (created, modified).
+- `--on`: comma-separated events (created, modified, deleted, moved).
 - `--glob`: only react to matching filenames.
 - `--run CMD` (repeatable, runs in order): the action; `{path}` is replaced with the triggering file (shell-quoted for you).
 - `--once`: exit after the first triggered action — use for demos/tests. `--timeout SECS`: hard stop.

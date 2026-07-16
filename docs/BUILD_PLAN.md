@@ -29,10 +29,10 @@ Waves of ≤4 parallel subagents. Owner types from `.claude/agents/`. Every task
 
 ## Wave 4 — flagship & flourish
 
-- [ ] W4.1 audiobook — **module-builder** — specs/09 — size S
-- [ ] W4.2 desk TUI (flagship) — **module-builder** — specs/11 — size L
-- [ ] W4.3 snippets/ + examples/cookbook/ seed scripts — **doc-smith** — CLAUDE.md standards — size S
-- [ ] W4.4 integration review sweep — **integration-reviewer** — all specs — size M
+- [x] W4.1 audiobook — **module-builder** — specs/09 — size S
+- [x] W4.2 desk TUI (flagship) — **module-builder** — specs/11 — size L
+- [x] W4.3 snippets/ + examples/cookbook/ seed scripts — **doc-smith** — CLAUDE.md standards — size S
+- [x] W4.4 integration review sweep — **integration-reviewer** — all specs — size M
 
 ## Phase 5+ (orchestrator-led, not waved)
 

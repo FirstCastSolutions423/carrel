@@ -41,19 +41,8 @@ def test_version_subprocess():
     assert PRODUCT["version"] in proc.stdout
 
 
-# Known core issue (reported in W1.1): LazyGroup.get_command imports command
-# modules eagerly while click formats --help, so `carrel --help` crashes until
-# every module in COMMANDS exists (none do yet). ARCHITECTURE.md promises "a
-# broken optional import breaks only its command" — get_command should catch
-# ImportError. xfail(strict=False) so these flip green when commands land.
-_HELP_XFAIL = pytest.mark.xfail(
-    reason="carrel --help broken: LazyGroup.get_command raises ModuleNotFoundError "
-           "for not-yet-implemented command modules (core bug, see W1.1 report)",
-    strict=False,
-)
 
 
-@_HELP_XFAIL
 def test_help_works():
     result = CliRunner().invoke(cli, ["--help"])
     assert result.exit_code == 0
@@ -62,7 +51,6 @@ def test_help_works():
         assert flag in result.output
 
 
-@_HELP_XFAIL
 def test_help_lists_registered_commands():
     result = CliRunner().invoke(cli, ["--help"])
     assert result.exit_code == 0

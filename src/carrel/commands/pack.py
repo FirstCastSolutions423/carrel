@@ -568,8 +568,7 @@ def _print_stats_table(data: dict[str, Any]) -> None:
 
 
 @click.command(name="pack")
-@click.argument("paths", nargs=-1, required=True,
-                type=click.Path(exists=True, path_type=Path))
+@click.argument("paths", nargs=-1, required=True, type=click.Path(path_type=Path))
 @click.option("-o", "--output", type=click.Path(dir_okay=False, path_type=Path),
               help="Write here instead of stdout (with --chunk: OUT.part1..N).")
 @click.option("--format", "fmt", type=click.Choice(["md", "xml", "json"]),

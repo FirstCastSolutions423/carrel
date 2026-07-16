@@ -1,0 +1,130 @@
+/* ==========================================================================
+   carrel desk — theme.
+   Phase 6 branding: adjust ONLY the variables in this block; every rule
+   below references them, so a palette swap is a variable swap.
+   ========================================================================== */
+$carrel-accent: #E8A13D;      /* brand accent (amber)             */
+$carrel-accent-dim: #A9741F;  /* accent for low-emphasis chrome   */
+$carrel-bg: #15110C;          /* app background                   */
+$carrel-panel: #1E1812;       /* side panes / bars                */
+$carrel-panel-alt: #282016;   /* inputs, result rows              */
+$carrel-border: #3D3426;      /* pane separators                  */
+$carrel-text: #E8E0D2;        /* main text                        */
+$carrel-muted: #9A8F7C;       /* secondary text                   */
+
+Screen {
+    background: $carrel-bg;
+    color: $carrel-text;
+}
+
+Header {
+    background: $carrel-panel;
+    color: $carrel-accent;
+}
+
+Footer {
+    background: $carrel-panel;
+}
+
+/* ---- three panes ------------------------------------------------------- */
+
+#body {
+    height: 1fr;
+}
+
+#tree {
+    width: 34;
+    min-width: 20;
+    background: $carrel-panel;
+    border-right: solid $carrel-border;
+    padding: 0 1;
+    scrollbar-color: $carrel-accent-dim;
+}
+
+DirectoryTree > .directory-tree--folder {
+    color: $carrel-accent;
+    text-style: bold;
+}
+
+#inspector {
+    width: 1fr;
+    padding: 1 2;
+    scrollbar-color: $carrel-accent-dim;
+}
+
+#meta {
+    margin-bottom: 1;
+}
+
+#preview {
+    margin-bottom: 1;
+}
+
+#annotations {
+    color: $carrel-muted;
+}
+
+#actions-pane {
+    width: 30;
+    min-width: 22;
+    background: $carrel-panel;
+    border-left: solid $carrel-border;
+}
+
+#actions-title {
+    padding: 1 1 0 1;
+    color: $carrel-accent;
+    text-style: bold;
+}
+
+#actions {
+    background: $carrel-panel;
+}
+
+OptionList:focus > .option-list--option-highlighted {
+    background: $carrel-accent;
+    color: $carrel-bg;
+}
+
+/* ---- bottom search bar -------------------------------------------------- */
+
+#search-bar {
+    height: auto;
+    background: $carrel-panel;
+    border-top: solid $carrel-border;
+}
+
+#results {
+    display: none;
+    max-height: 12;
+    background: $carrel-panel-alt;
+}
+
+#search {
+    background: $carrel-panel-alt;
+}
+
+#search:focus {
+    border: tall $carrel-accent;
+}
+
+/* ---- modal prompts ------------------------------------------------------ */
+
+TextPrompt {
+    align: center middle;
+}
+
+#prompt-box {
+    width: 64;
+    max-width: 90%;
+    height: auto;
+    padding: 1 2;
+    background: $carrel-panel;
+    border: thick $carrel-accent;
+}
+
+#prompt-title {
+    color: $carrel-accent;
+    text-style: bold;
+    margin-bottom: 1;
+}

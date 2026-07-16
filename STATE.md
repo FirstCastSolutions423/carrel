@@ -5,8 +5,8 @@
 
 ## Now
 
-- **Phase:** 4 — Waves 1-3 DONE — **MVP line crossed**: 20 commands live, marketplace validates (claude plugin validate ✔), 470 tests green. Wave 4 (flagship) dispatching.
-- **Next:** Wave 4: audiobook, desk TUI, snippets/cookbook seeds, integration review sweep.
+- **Phase:** 4 — DONE. All 4 waves complete: 24 commands, desk TUI, marketplace (5 plugins, validate ✔), snippets, 6 cookbook recipes all executed. Review findings fixed (organize.md drift, pack exit-4, audiobook --force, manifest self-exclusion).
+- **Next:** Phase 5 — TEST_REPORT.md, marketplace install proof, remaining E2E.
 
 ## Done
 
