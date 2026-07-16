@@ -64,3 +64,11 @@ Full sweep of all 24 commands: `--help` exit 0, real fixture invocation, parseab
 ## finalize.sh
 
 Tested in Phase 7 — see the "finalize.sh test runs" section appended below.
+
+## finalize.sh test runs (Phase 7, executed 2026-07-16)
+
+**Dry run:** `bash scripts/finalize.sh --dry-run --dest <tmp>/final-dry --name carrel` → exit 0; prints every step ([dry-run] prefixed), changes nothing.
+
+**Real run into a temp dir:** `bash scripts/finalize.sh --dest <tmp>/carrel-final --keep-source` → copy relocated (tar-pipe, venv/caches excluded), full dev history preserved, release commit `release: carrel v0.1.0` created, tag `v0.1.0` set, clean tree; in the copy: `uv sync` → `carrel --version` boots, tests pass.
+
+**Centralized rename in the copy:** `python3 scripts/rename_product.py lectern` → 99 text files patched, 5 plugin dirs renamed, pyproject name + console-script renamed, `_product.py` regenerated. Verified in the renamed copy: **entire 501-test suite green**, `claude plugin validate .` ✔, `lectern --help` / `lectern doctor --json` correct. Guarantees enforced by design: the Python import package stays `carrel`; core-owned literals (`.carrel/`, `carrel.db`, `carrel.*` module paths) are protected from renaming; fixture content is name-neutral (nothing product-named is baked into committed binaries).

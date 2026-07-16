@@ -62,7 +62,7 @@ def test_md_to_speech_strips_syntax(fixtures: Path):
     # inline code kept as text, backticks gone
     assert "Some inline code and a fenced block:" in spoken
     # links keep their text, lose their URL; emphasis markers stripped
-    assert "carrel project" in spoken
+    assert "desk project" in spoken
     assert "https://example.com" not in spoken
     assert "melodious cartography" in spoken and "*" not in spoken
     # list bullets stripped but item text kept
@@ -84,7 +84,7 @@ def test_md_chapters_splits_on_h1(fixtures: Path):
     assert [t for t, _ in chapters] == [
         "Chapter One: The Reading Room", "Chapter Two: The Catalogue"]
     assert "melodious cartography" in chapters[0][1]
-    assert "carrel project" in chapters[1][1]
+    assert "desk project" in chapters[1][1]
 
 
 def test_md_chapters_falls_back_to_h2_then_single():

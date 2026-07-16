@@ -58,7 +58,12 @@ class LazyGroup(click.Group):
         return module.cmd
 
 
-@click.group(cls=LazyGroup, name=PRODUCT["cli"])
+@click.group(cls=LazyGroup, name=PRODUCT["cli"],
+             help=f"""{PRODUCT["cli"]} — {PRODUCT["tagline"].lower().rstrip(".")}.
+
+    Every command supports --help; data-producing commands support --json.
+    Run `{PRODUCT["cli"]} doctor` to see what your environment enables.
+    """)
 @click.version_option(PRODUCT["version"], prog_name=PRODUCT["name"],
                       message=f"%(prog)s %(version)s — {PRODUCT['tagline']}")
 @click.option("--json", "as_json", is_flag=True, help="Machine-readable JSON output.")

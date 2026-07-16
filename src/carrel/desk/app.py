@@ -320,7 +320,7 @@ class DeskApp(App[None]):
     def run_file_action(self, action_id: str) -> None:
         """Dispatch one action by id; all real work runs in a thread worker."""
         sel = self.selected
-        out_dir = self.root_path / "carrel-out"
+        out_dir = self.root_path / f"{PRODUCT['cli']}-out"
 
         if action_id == "index":
             self._run_action("Index", self._index_root)

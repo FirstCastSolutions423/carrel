@@ -22,4 +22,7 @@ def test_product_matches_json():
 def test_pyproject_version_matches():
     pyproject = tomllib.loads((REPO_ROOT / "pyproject.toml").read_text())
     assert pyproject["project"]["version"] == PRODUCT["version"]
-    assert pyproject["project"]["name"] == PRODUCT["package"]
+    # distribution name follows the product name; the import package is fixed
+    # even across renames (see rename_product.py) — assert it exists on disk
+    assert pyproject["project"]["name"] == PRODUCT["name"]
+    assert (Path(__file__).parent.parent / "src" / PRODUCT["package"] / "cli.py").is_file()

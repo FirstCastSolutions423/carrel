@@ -57,7 +57,7 @@ Second paragraph. Redaction tests rely on the planted strings below,
 which are synthetic and belong to nobody:
 
   contact email: jane.doe@example.com
-  backup email:  j.public+carrel@test.example.org
+  backup email:  j.public+desk@test.example.org
   ssn-style:     123-45-6789
   phone-style:   (555) 867-5309
 
@@ -93,7 +93,7 @@ def shelve(book: str) -> str:
 # Chapter Two: The Catalogue
 
 A second H1 chapter so chapter-splitting logic has a real boundary.
-See the [carrel project](https://example.com/carrel) link for tests
+See the [desk project](https://example.com/reading-desk) link for tests
 that care about links.
 
 ## Closing
@@ -162,7 +162,7 @@ RECORDS = [
 def gen_json() -> None:
     sample = {
         "library": {
-            "name": "carrel test library",
+            "name": "reading desk test library",
             "location": {"city": "Exampleville", "floor": 3},
             "open": True,
         },
@@ -227,7 +227,7 @@ def make_art() -> Image.Image:
     d.rectangle((30, 170, 180, 270), fill=(70, 160, 140), outline=(20, 20, 20), width=3)
     d.line((0, 290, 400, 150), fill=(230, 230, 230), width=4)
     font = ImageFont.load_default(size=26)
-    d.text((30, 30), "carrel sample art", font=font, fill=(255, 255, 255))
+    d.text((30, 30), "desk sample art", font=font, fill=(255, 255, 255))
     return img
 
 
@@ -243,7 +243,7 @@ def gen_images() -> Image.Image:
 
     # sample.jpg — same art, JPEG, EXIF DateTimeOriginal via Pillow Image.Exif
     exif = Image.Exif()
-    exif[0x010F] = "carrel"                     # Make (IFD0)
+    exif[0x010F] = "deskfixture"                 # Make (IFD0) — name-neutral: binaries are committed and never renamed
     exif[0x0110] = "fixture-generator"          # Model (IFD0)
     exif.get_ifd(0x8769)[36867] = EXIF_DATETIME  # Exif IFD -> DateTimeOriginal
     buf = io.BytesIO()
@@ -275,7 +275,7 @@ def make_scanned() -> Image.Image:
     d.text((100, 200), f"{words[0]} {words[1]}", font=big, fill="black")
     d.text((100, 380), f"{words[2]} {words[3]}", font=big, fill="black")
     d.text((100, 640), "Scanned page fixture for the", font=small, fill="black")
-    d.text((100, 710), "carrel OCR pipeline tests.", font=small, fill="black")
+    d.text((100, 710), "the desk OCR pipeline tests.", font=small, fill="black")
     return img
 
 

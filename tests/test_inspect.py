@@ -83,7 +83,7 @@ def test_jpg_detail_with_exif(fixtures: Path):
     assert d["mode"] == "RGB"
     assert d["format"] == "JPEG"
     assert d["exif"]["DateTimeOriginal"] == "2021:06:15 12:00:00"
-    assert d["exif"]["Make"] == "carrel"
+    assert d["exif"]["Make"] == "deskfixture"
 
 
 def test_png_detail(fixtures: Path):
@@ -168,7 +168,7 @@ def test_deep_without_exiftool_never_exits_3(fixtures: Path, monkeypatch):
     obj = json.loads(res.output)
     assert obj["exiftool"] == "not installed"
     # builtin EXIF summary still present
-    assert obj["detail"]["exif"]["Make"] == "carrel"
+    assert obj["detail"]["exif"]["Make"] == "deskfixture"
 
 
 def test_no_deep_flag_no_exiftool_key(fixtures: Path):

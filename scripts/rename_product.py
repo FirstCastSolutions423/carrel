@@ -22,12 +22,26 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 RENAME_GLOBS = ["docs/**/*.md", "plugins/**/*.md", "plugins/**/*.json", "plugins/**/*.sh",
-                "snippets/**", "examples/**", "README.md", "CHANGELOG.md",
+                "snippets/**", "examples/**", "tests/**/*.py", "README.md", "CHANGELOG.md",
                 ".claude-plugin/marketplace.json", ".claude/agents/*.md", "specs/*.md"]
+
+# Core-owned literals that never rename (the Python package stays `carrel`):
+# `.carrel/` desk dirs, `carrel.db`, module paths (carrel.core, from carrel import).
+_PROTECTED = [".carrel", "carrel.db", "carrel.cli", "carrel.core", "carrel.commands",
+              "carrel.desk", "carrel._product", "import carrel", "from carrel"]
+_MASK = "\x00PROTECTED{}\x00"
+
+
+def _rename_text(text: str, old: str, new: str) -> str:
+    for i, token in enumerate(_PROTECTED):
+        text = text.replace(token, _MASK.format(i))
+    text = re.sub(rf"\b{re.escape(old)}\b", new, text)
+    for i, token in enumerate(_PROTECTED):
+        text = text.replace(_MASK.format(i), token)
+    return text
 
 
 def patch_text_files(old: str, new: str) -> int:
-    word = re.compile(rf"\b{re.escape(old)}\b")
     changed = 0
     for pattern in RENAME_GLOBS:
         for path in ROOT.glob(pattern):
@@ -37,7 +51,7 @@ def patch_text_files(old: str, new: str) -> int:
                 text = path.read_text()
             except (UnicodeDecodeError, OSError):
                 continue
-            new_text = word.sub(new, text)
+            new_text = _rename_text(text, old, new)
             if new_text != text:
                 path.write_text(new_text)
                 changed += 1

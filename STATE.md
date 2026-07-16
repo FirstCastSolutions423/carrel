@@ -5,8 +5,8 @@
 
 ## Now
 
-- **Phase:** 6 — DONE. Visual identity (4 SVGs, BRAND.md), README hero+grid, full docs package (16 docs), CI workflow, 9 executed cookbook recipes. 501 tests green.
-- **Next:** Phase 7 — finalize.sh real temp-dir run + rename test, DoD report.
+- **Phase:** 7 — DONE. finalize.sh tested (dry + real + rename round-trip, suite green post-rename). BUILD COMPLETE.
+- **Next:** nothing — run scripts/finalize.sh when ready to relocate/publish.
 
 ## Done
 

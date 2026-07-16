@@ -92,7 +92,8 @@ def _tool_search(args: dict[str, Any], default_root: Path) -> dict[str, Any]:
     limit = int(args.get("limit") or 20)
     if not DeskDB.exists(root):
         raise CarrelInputError(
-            f"no carrel index under {root} — run `carrel index --root {root}` first"
+            f"no {PRODUCT['cli']} index under {root} — "
+            f"run `{PRODUCT['cli']} index --root {root}` first"
         )
     with DeskDB(root) as db:
         rows = db.fts_search(query, limit=limit)

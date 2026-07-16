@@ -32,7 +32,7 @@ def test_html(fixtures):
 
 def test_json(fixtures):
     text = extract_text(fixtures / "sample.json")
-    assert "library.name: carrel test library" in text
+    assert "library.name: reading desk test library" in text
     assert "records.0.name: Ada" in text  # list items flattened with index
     assert "counts.books: 1204" in text
 
@@ -110,4 +110,4 @@ def test_markdown_to_html(fixtures):
     html = markdown_to_html((fixtures / "sample.md").read_text())
     assert "<h1>Chapter One: The Reading Room</h1>" in html
     assert "<code" in html
-    assert '<a href="https://example.com/carrel"' in html
+    assert '<a href="https://example.com/reading-desk"' in html

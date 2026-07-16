@@ -22,7 +22,7 @@ def shelve(book: str) -> str:
 # Chapter Two: The Catalogue
 
 A second H1 chapter so chapter-splitting logic has a real boundary.
-See the [carrel project](https://example.com/carrel) link for tests
+See the [desk project](https://example.com/reading-desk) link for tests
 that care about links.
 
 ## Closing

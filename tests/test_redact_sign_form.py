@@ -23,7 +23,7 @@ from carrel.cli import cli
 from carrel.core import adapters
 from conftest import needs
 
-PLANTED_EMAILS = ("jane.doe@example.com", "j.public+carrel@test.example.org")
+PLANTED_EMAILS = ("jane.doe@example.com", "j.public+desk@test.example.org")
 PLANTED_SSN = "123-45-6789"
 PDF_SENTINEL = "palimpsest harbor"
 
