@@ -5,8 +5,8 @@
 
 ## Now
 
-- **Phase:** 0 — DONE. Next: Phase 1 ideation.
-- **Next:** write docs/ENVIRONMENT.md from real probes, commit `phase(0)`, then Phase 1 ideation.
+- **Phase:** 1 — DONE (product: carrel). Next: Phase 2 architecture+specs+scaffold.
+- **Next:** docs/ARCHITECTURE.md, specs/, repo skeleton, marketplace manifests, .claude/agents. Then phase(2) commit.
 
 ## Done
 
@@ -21,5 +21,5 @@
 ## Key facts for a fresh session
 
 - Stack: Python + uv (decided, see DECISIONS.md). Flagship: Textual TUI.
-- Product name: TBD in Phase 1 → will live in `product.json` only.
+- Product: **carrel** (product.json is the SoT). Tagline: "A library desk for your files — and your agents."
 - Marketplace install flow to validate in Phase 5: `claude plugin validate .` → `claude plugin marketplace add <path>` → `claude plugin install <plugin>@<marketplace>`.
