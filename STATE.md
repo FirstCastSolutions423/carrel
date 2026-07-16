@@ -1,7 +1,7 @@
 # STATE
 
 > Live status of the build. A brand-new session should be able to resume from this file alone.
-> Directive: the original build prompt (mission, phases, Definition of Done) — key points mirrored in docs/BUILD_PLAN.md once written. Approved plan copy: `~/.claude/plans/quiet-orbiting-feigenbaum.md`.
+> Directive: the original build prompt (mission, phases, Definition of Done) — key points mirrored in docs/BUILD_PLAN.md once written. Approved plan copy: (local Claude Code plan file — path generalized).
 
 ## Now
 
