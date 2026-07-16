@@ -67,7 +67,8 @@ ADAPTERS: dict[str, Adapter] = {a.name: a for a in [
     _a("rg", "fast content search (ripgrep)", "sudo apt install ripgrep"),
     _a("fd", "fast file finding", "sudo apt install fd-find", binaries=("fd", "fdfind")),
     _a("sqlite3", "SQLite CLI (index db is stdlib; CLI optional)", "sudo apt install sqlite3"),
-    _a("inotifywait", "filesystem event tap (watch fallback)", "sudo apt install inotify-tools"),
+    _a("inotifywait", "filesystem event tap (watch fallback)", "sudo apt install inotify-tools",
+       version_args=("--help",)),
     _a("espeak-ng", "text-to-speech (baseline voice)", "sudo apt install espeak-ng"),
     _a("piper", "text-to-speech (natural voice, preferred if present)", "pipx install piper-tts"),
     _a("edge-tts", "text-to-speech (cloud, preferred if present)", "pipx install edge-tts"),
@@ -76,12 +77,19 @@ ADAPTERS: dict[str, Adapter] = {a.name: a for a in [
 ]}
 
 
+def _lookup(name: str) -> Adapter:
+    """Registered adapter, or an ad-hoc one so unknown names still fail with a hint."""
+    return ADAPTERS.get(name) or _a(
+        name, "unregistered tool", f"install '{name}' and ensure it is on PATH"
+    )
+
+
 def have(name: str) -> bool:
-    return ADAPTERS[name].resolve() is not None
+    return _lookup(name).resolve() is not None
 
 
 def require(name: str) -> str:
-    adapter = ADAPTERS[name]
+    adapter = _lookup(name)
     path = adapter.resolve()
     if path is None:
         raise MissingDependencyError(adapter)
@@ -101,7 +109,7 @@ def run(name: str, *args: str, input: bytes | str | None = None, timeout: int = 
 
 
 def version_of(name: str) -> str | None:
-    adapter = ADAPTERS[name]
+    adapter = _lookup(name)
     if adapter.resolve() is None:
         return None
     try:

@@ -1,0 +1,45 @@
+{
+  "library": {
+    "name": "carrel test library",
+    "location": {
+      "city": "Exampleville",
+      "floor": 3
+    },
+    "open": true
+  },
+  "records": [
+    {
+      "id": 1,
+      "name": "Ada",
+      "dept": "archives",
+      "score": 91.5,
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Basil",
+      "dept": "maps",
+      "score": 78.0,
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Clara",
+      "dept": "archives",
+      "score": 88.25,
+      "active": false
+    },
+    {
+      "id": 4,
+      "name": "Dmitri",
+      "dept": "periodicals",
+      "score": 64.0,
+      "active": true
+    }
+  ],
+  "counts": {
+    "books": 1204,
+    "maps": 87,
+    "overdue": 3
+  }
+}

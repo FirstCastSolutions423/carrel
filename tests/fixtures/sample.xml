@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <shelf id="A">
+      <book year="1998">
+        <title>The Palimpsest</title>
+        <status>in</status>
+      </book>
+      <book year="2004">
+        <title>Harbor Lights</title>
+        <status>in</status>
+      </book>
+  </shelf>
+  <shelf id="B">
+      <book year="2011">
+        <title>Zephyr Atlas</title>
+        <status>in</status>
+      </book>
+      <book year="1987">
+        <title>Quixotic Roads</title>
+        <status>in</status>
+      </book>
+  </shelf>
+  <shelf id="C">
+      <book year="2020">
+        <title>Cartography of Sound</title>
+        <status>in</status>
+      </book>
+  </shelf>
+</library>

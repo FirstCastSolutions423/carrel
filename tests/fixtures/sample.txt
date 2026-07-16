@@ -1,0 +1,14 @@
+Carrel sample text fixture. This paragraph exists so that plain-text
+extraction, packing, and indexing have something honest to chew on. The
+sentinel phrase for search tests is: quixotic zephyr.
+
+Second paragraph. Redaction tests rely on the planted strings below,
+which are synthetic and belong to nobody:
+
+  contact email: jane.doe@example.com
+  backup email:  j.public+carrel@test.example.org
+  ssn-style:     123-45-6789
+  phone-style:   (555) 867-5309
+
+Third paragraph, deliberately dull. A quiet desk, a stack of files, and
+one quixotic zephyr drifting past the window for good measure.

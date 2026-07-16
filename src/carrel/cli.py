@@ -48,7 +48,13 @@ class LazyGroup(click.Group):
         module_name = COMMANDS.get(name)
         if module_name is None:
             return None
-        module = importlib.import_module(f"carrel.commands.{module_name}")
+        try:
+            module = importlib.import_module(f"carrel.commands.{module_name}")
+        except ImportError as e:
+            # a broken/missing optional module must only break its own command
+            if "--debug" in sys.argv:
+                click.echo(f"warning: command '{name}' unavailable: {e}", err=True)
+            return None
         return module.cmd
 
 

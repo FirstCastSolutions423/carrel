@@ -6,10 +6,10 @@ Waves of ≤4 parallel subagents. Owner types from `.claude/agents/`. Every task
 
 ## Wave 1 — foundations (no cross-deps)
 
-- [ ] W1.1 fixtures + conftest + core unit tests — **test-engineer** — specs/14, specs/00 acceptance — size M
-- [ ] W1.2 doctor + mcp — **module-builder** — specs/13 — size M
-- [ ] W1.3 pack — **module-builder** — specs/05 — size M
-- [ ] W1.4 edit — **module-builder** — specs/04 — size M
+- [x] W1.1 fixtures + conftest + core unit tests — **test-engineer** — specs/14, specs/00 acceptance — size M
+- [x] W1.2 doctor + mcp — **module-builder** — specs/13 — size M
+- [x] W1.3 pack — **module-builder** — specs/05 — size M
+- [x] W1.4 edit — **module-builder** — specs/04 — size M
 
 ## Wave 2 — extraction & desk-db commands (need fixtures)
 

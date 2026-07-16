@@ -1,0 +1,21 @@
+id,title,shelf,year,checked_out
+1,Palimpsest Vol 1,B2,1983,no
+2,Zephyr Vol 1,C3,1986,no
+3,Cartography Vol 1,D4,1989,yes
+4,Harbor Vol 1,A5,1992,no
+5,Quixotic Vol 1,B6,1995,no
+6,Melody Vol 1,C7,1998,yes
+7,Atlas Vol 1,D1,2001,no
+8,Lantern Vol 1,A2,2004,no
+9,Vellum Vol 1,B3,2007,yes
+10,Folio Vol 1,C4,2010,no
+11,Palimpsest Vol 2,D5,2013,no
+12,Zephyr Vol 2,A6,2016,yes
+13,Cartography Vol 2,B7,2019,no
+14,Harbor Vol 2,C1,1982,no
+15,Quixotic Vol 2,D2,1985,yes
+16,Melody Vol 2,A3,1988,no
+17,Atlas Vol 2,B4,1991,no
+18,Lantern Vol 2,C5,1994,yes
+19,Vellum Vol 2,D6,1997,no
+20,Folio Vol 2,A7,2000,no

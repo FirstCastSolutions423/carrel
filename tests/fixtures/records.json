@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Ada",
+    "dept": "archives",
+    "score": 91.5,
+    "active": true
+  },
+  {
+    "id": 2,
+    "name": "Basil",
+    "dept": "maps",
+    "score": 78.0,
+    "active": true
+  },
+  {
+    "id": 3,
+    "name": "Clara",
+    "dept": "archives",
+    "score": 88.25,
+    "active": false
+  },
+  {
+    "id": 4,
+    "name": "Dmitri",
+    "dept": "periodicals",
+    "score": 64.0,
+    "active": true
+  },
+  {
+    "id": 5,
+    "name": "Edith",
+    "dept": "maps",
+    "score": 95.75,
+    "active": true
+  },
+  {
+    "id": 6,
+    "name": "Felix",
+    "dept": "rare-books",
+    "score": 71.5,
+    "active": false
+  },
+  {
+    "id": 7,
+    "name": "Greta",
+    "dept": "periodicals",
+    "score": 83.0,
+    "active": true
+  },
+  {
+    "id": 8,
+    "name": "Hugo",
+    "dept": "rare-books",
+    "score": 59.5,
+    "active": false
+  }
+]

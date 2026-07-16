@@ -5,8 +5,8 @@
 
 ## Now
 
-- **Phase:** 2 — DONE (architecture, 15 specs, walking skeleton: core lib + CLI boot verified, deps installed via uv). Next: Phase 3 build plan.
-- **Next:** docs/BUILD_PLAN.md with waves + MVP line, then dispatch Wave 1 (fixtures + core tests + first command modules).
+- **Phase:** 4 — Wave 1 DONE (fixtures, core tests, doctor, mcp, pack, edit; 163 tests green; core bugs fixed: lazy --help, hinted require()). Wave 2 dispatching.
+- **Next:** Wave 2: convert, ocr, inspect+diff, index/search/tag/note. Then wave(2) commit.
 
 ## Done
 

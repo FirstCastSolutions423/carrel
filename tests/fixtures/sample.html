@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Carrel Sample Page</title>
+  <style>body { font-family: serif; }</style>
+</head>
+<body>
+  <h1>Carrel Sample Page</h1>
+  <p>An HTML fixture with the usual furniture: headings, a table,
+     an image reference, and a form.</p>
+
+  <h2>Reading list</h2>
+  <table>
+    <tr><th>Title</th><th>Shelf</th><th>Status</th></tr>
+    <tr><td>The Palimpsest</td><td>A2</td><td>out</td></tr>
+    <tr><td>Zephyr Atlas</td><td>B4</td><td>in</td></tr>
+    <tr><td>Cartography of Sound</td><td>C1</td><td>in</td></tr>
+  </table>
+
+  <h2>Cover art</h2>
+  <p><img src="sample.png" alt="generated sample art" width="400" height="300"></p>
+
+  <h2>Request a book</h2>
+  <form action="/request" method="post">
+    <label>Name: <input type="text" name="name"></label>
+    <label>Title: <input type="text" name="title"></label>
+    <label><input type="checkbox" name="agree"> I will return it</label>
+    <button type="submit">Request</button>
+  </form>
+</body>
+</html>
