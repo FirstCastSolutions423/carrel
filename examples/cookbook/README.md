@@ -19,6 +19,9 @@ Runnable, end-to-end recipes for common carrel pipelines. Every script:
 | [04-redact-pii.sh](04-redact-pii.sh) | `redact` built-in PII patterns in txt, then true PDF redaction + leak test | weasyprint, tesseract |
 | [05-conversion-relay.sh](05-conversion-relay.sh) | `convert` md → html → pdf → txt, `inspect --json` folded into a summary | pandoc, weasyprint, pdftotext |
 | [06-form-roundtrip.sh](06-form-roundtrip.sh) | `form build` (JSON spec → HTML/PDF) + `form fill`/`fields` on an AcroForm | weasyprint (build --pdf) |
+| [07-audiobook-from-markdown.sh](07-audiobook-from-markdown.sh) | `audiobook`: markdown → per-chapter MP3s (headings spoken, code skipped) | espeak-ng, ffmpeg |
+| [08-pack-repo-for-claude.sh](08-pack-repo-for-claude.sh) | `pack` a repo for LLM context: `--stats` budget, XML pack, `--chunk` parts | — |
+| [09-provenance-chain.sh](09-provenance-chain.sh) | `sign manifest` + ephemeral GPG key + tamper detection (`sign verify` → exit 1) | gpg |
 
 Run `carrel doctor` first — it tells you which external binaries each command
 needs and how to install anything missing (`sudo apt install …`).

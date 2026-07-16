@@ -38,7 +38,7 @@ Waves of ≤4 parallel subagents. Owner types from `.claude/agents/`. Every task
 
 - [x] fixtures for cookbook E2E runs executed for real → docs/TEST_REPORT.md
 - [x] marketplace add + install + slash-command execution proof
-- [ ] Phase 6 wave: design-artist (assets/BRAND/README) ∥ doc-smith (docs package) ∥ CI workflow
+- [x] Phase 6 wave: design-artist (assets/BRAND/README) ∥ doc-smith (docs package) ∥ CI workflow
 - [ ] Phase 7: finalize.sh + dry-run + temp-dir run
 
 ## Scope guards

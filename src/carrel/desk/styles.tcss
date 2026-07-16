@@ -3,14 +3,16 @@
    Phase 6 branding: adjust ONLY the variables in this block; every rule
    below references them, so a palette swap is a variable swap.
    ========================================================================== */
-$carrel-accent: #E8A13D;      /* brand accent (amber)             */
-$carrel-accent-dim: #A9741F;  /* accent for low-emphasis chrome   */
-$carrel-bg: #15110C;          /* app background                   */
-$carrel-panel: #1E1812;       /* side panes / bars                */
-$carrel-panel-alt: #282016;   /* inputs, result rows              */
-$carrel-border: #3D3426;      /* pane separators                  */
-$carrel-text: #E8E0D2;        /* main text                        */
-$carrel-muted: #9A8F7C;       /* secondary text                   */
+/* Palette source of truth: docs/BRAND.md ("warm lamplight on dark wood"). */
+$carrel-accent: #F2A93C;      /* Lamplight — brand accent (amber) */
+$carrel-accent-dim: #B07C24;  /* Brass — low-emphasis chrome      */
+$carrel-cool: #6E9EBF;        /* Dusk — cool secondary (info)     */
+$carrel-bg: #14100A;          /* Ink — app background             */
+$carrel-panel: #211A11;       /* Walnut — side panes / bars       */
+$carrel-panel-alt: #2C2416;   /* Umber — inputs, result rows      */
+$carrel-border: #443826;      /* Grain — pane separators          */
+$carrel-text: #F2EADA;        /* Paper — main text                */
+$carrel-muted: #A19278;       /* Parchment — secondary text       */
 
 Screen {
     background: $carrel-bg;

@@ -5,8 +5,8 @@
 
 ## Now
 
-- **Phase:** 5 — DONE. 501 tests green; 7 cookbook recipes executed; marketplace added+installed+slash command run headlessly (proof in docs/TEST_REPORT.md); carrel on PATH via uv tool install.
-- **Next:** Phase 6 — brand assets, README, docs package, then Phase 7 finalize.sh.
+- **Phase:** 6 — DONE. Visual identity (4 SVGs, BRAND.md), README hero+grid, full docs package (16 docs), CI workflow, 9 executed cookbook recipes. 501 tests green.
+- **Next:** Phase 7 — finalize.sh real temp-dir run + rename test, DoD report.
 
 ## Done
 

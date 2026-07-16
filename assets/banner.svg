@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" role="img" aria-label="carrel — a library desk for your files, and your agents">
+  <!-- carrel banner — hand-authored. Dark-first: designed for the Ink background;
+       rounded transparent corners keep it tidy on light pages too. -->
+  <defs>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F2A93C" stop-opacity="0.28"/>
+      <stop offset="0.55" stop-color="#F2A93C" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#F2A93C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B150D"/>
+      <stop offset="1" stop-color="#14100A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="320" rx="24" fill="url(#bg)"/>
+
+  <!-- mark (same geometry as logo.svg, sans tile) -->
+  <g transform="translate(58,22) scale(0.55)">
+    <circle cx="316" cy="132" r="150" fill="url(#glow)"/>
+    <path d="M 316 150 L 252 352 L 396 352 Z" fill="#F2A93C" opacity="0.16"/>
+    <path d="M 316 132 L 182 132 Q 122 132 122 192 L 122 320 Q 122 380 182 380 L 396 380"
+          fill="none" stroke="#F2A93C" stroke-width="56"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="276" y="316" width="104" height="36" rx="8" fill="#F2EADA"/>
+    <path d="M 292 328 L 364 328 M 292 340 L 348 340" stroke="#B07C24" stroke-width="5"
+          stroke-linecap="round" opacity="0.6"/>
+    <circle cx="316" cy="132" r="40" fill="#F2A93C"/>
+    <circle cx="316" cy="132" r="15" fill="#F2EADA" opacity="0.9"/>
+  </g>
+
+  <!-- wordmark: hand-drawn monoline "carrel" -->
+  <g transform="translate(338,52) scale(0.95)" fill="none" stroke="#F2EADA"
+     stroke-width="18" stroke-linecap="round">
+    <path d="M 64.5 47.4 A 32 32 0 1 0 64.5 88.6"/>
+    <circle cx="126" cy="68" r="32"/>
+    <path d="M 158 36 L 158 100"/>
+    <path d="M 184 36 L 184 100"/>
+    <path d="M 184 68 A 32 32 0 0 1 216 36"/>
+    <path d="M 246 36 L 246 100"/>
+    <path d="M 246 68 A 32 32 0 0 1 278 36"/>
+    <path d="M 304 68 L 368 68"/>
+    <path d="M 368 68 A 32 32 0 1 0 356.6 92.5"/>
+    <path d="M 394 14 L 394 100"/>
+  </g>
+
+  <!-- tagline + command strip (system font stacks only) -->
+  <text x="340" y="212" font-size="27" fill="#A19278"
+        font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">A library desk for your files — and your agents.</text>
+  <text x="340" y="262" font-size="22" fill="#B07C24"
+        font-family="ui-monospace, 'Cascadia Code', Menlo, Consolas, 'Liberation Mono', monospace">convert · ocr · pack · index · search · desk</text>
+
+  <!-- a shelf of books, far right -->
+  <g transform="translate(40,0)">
+    <rect x="1030" y="150" width="20" height="95" rx="4" fill="#B07C24"/>
+    <rect x="1056" y="167" width="16" height="78" rx="4" fill="#443826"/>
+    <rect x="1078" y="137" width="22" height="108" rx="4" fill="#6E9EBF"/>
+    <rect x="1106" y="157" width="16" height="88" rx="4" fill="#A19278"/>
+    <rect x="1128" y="175" width="20" height="70" rx="4" fill="#F2A93C"/>
+    <rect x="1154" y="153" width="16" height="92" rx="4" fill="#443826"
+          transform="rotate(9 1162 245)"/>
+    <path d="M 1012 247 L 1200 247" stroke="#443826" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

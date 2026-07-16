@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 500" role="img" aria-label="carrel palette swatch sheet">
+  <!-- carrel palette sheet — canonical values live in docs/BRAND.md -->
+  <rect width="1160" height="500" rx="24" fill="#14100A"/>
+  <text x="48" y="64" font-size="30" fill="#F2EADA" font-weight="600"
+        font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">carrel — palette</text>
+  <text x="48" y="94" font-size="18" fill="#A19278"
+        font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">warm lamplight on dark wood · dark-first · one cool secondary</text>
+
+  <!-- row 1: light-on-dark colors -->
+  <g font-family="ui-monospace, 'Cascadia Code', Menlo, Consolas, 'Liberation Mono', monospace" font-size="17">
+    <rect x="48"  y="130" width="200" height="110" rx="14" fill="#F2A93C"/>
+    <text x="48"  y="270" fill="#F2EADA">Lamplight</text>
+    <text x="48"  y="294" fill="#A19278">#F2A93C</text>
+
+    <rect x="272" y="130" width="200" height="110" rx="14" fill="#B07C24"/>
+    <text x="272" y="270" fill="#F2EADA">Brass</text>
+    <text x="272" y="294" fill="#A19278">#B07C24</text>
+
+    <rect x="496" y="130" width="200" height="110" rx="14" fill="#F2EADA"/>
+    <text x="496" y="270" fill="#F2EADA">Paper</text>
+    <text x="496" y="294" fill="#A19278">#F2EADA</text>
+
+    <rect x="720" y="130" width="200" height="110" rx="14" fill="#A19278"/>
+    <text x="720" y="270" fill="#F2EADA">Parchment</text>
+    <text x="720" y="294" fill="#A19278">#A19278</text>
+
+    <rect x="944" y="130" width="168" height="110" rx="14" fill="#6E9EBF"/>
+    <text x="944" y="270" fill="#F2EADA">Dusk</text>
+    <text x="944" y="294" fill="#A19278">#6E9EBF</text>
+
+    <!-- row 2: surfaces -->
+    <rect x="48"  y="330" width="200" height="90" rx="14" fill="#14100A" stroke="#443826" stroke-width="2"/>
+    <text x="48"  y="450" fill="#F2EADA">Ink</text>
+    <text x="48"  y="474" fill="#A19278">#14100A</text>
+
+    <rect x="272" y="330" width="200" height="90" rx="14" fill="#211A11" stroke="#443826" stroke-width="2"/>
+    <text x="272" y="450" fill="#F2EADA">Walnut</text>
+    <text x="272" y="474" fill="#A19278">#211A11</text>
+
+    <rect x="496" y="330" width="200" height="90" rx="14" fill="#2C2416" stroke="#443826" stroke-width="2"/>
+    <text x="496" y="450" fill="#F2EADA">Umber</text>
+    <text x="496" y="474" fill="#A19278">#2C2416</text>
+
+    <rect x="720" y="330" width="200" height="90" rx="14" fill="#443826"/>
+    <text x="720" y="450" fill="#F2EADA">Grain</text>
+    <text x="720" y="474" fill="#A19278">#443826</text>
+  </g>
+</svg>
