@@ -22,7 +22,7 @@ to install it or run `uv run carrel ...` from this repo.
 
 ```bash
 claude plugin validate .                                   # optional sanity check
-claude plugin marketplace add /home/you/projects/toolkit-build
+claude plugin marketplace add FirstCastSolutions423/carrel
 # ✔ Successfully added marketplace: carrel
 
 claude plugin install carrel-inspect@carrel

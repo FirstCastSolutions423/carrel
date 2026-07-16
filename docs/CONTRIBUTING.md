@@ -3,7 +3,7 @@
 ## Dev setup
 
 ```bash
-git clone <repo> ~/projects/toolkit-build && cd ~/projects/toolkit-build
+git clone https://github.com/FirstCastSolutions423/carrel.git ~/projects/carrel && cd ~/projects/carrel
 uv sync                 # creates .venv from pyproject.toml + uv.lock
 uv run carrel doctor    # which optional binaries you have + apt install hints
 uv run pytest           # 501 tests; binary-gated tests skip (with reason) when a binary is absent

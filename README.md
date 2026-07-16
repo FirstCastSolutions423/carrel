@@ -6,7 +6,8 @@
 
 <img src="https://img.shields.io/badge/python-3.12%2B-6E9EBF?labelColor=211A11" alt="Python 3.12+">
 <img src="https://img.shields.io/badge/license-MIT-B07C24?labelColor=211A11" alt="License: MIT">
-<img src="https://img.shields.io/badge/tests-501%20passed-F2A93C?labelColor=211A11" alt="Tests: 501 passed">
+<a href="https://github.com/FirstCastSolutions423/carrel/actions"><img src="https://img.shields.io/github/actions/workflow/status/FirstCastSolutions423/carrel/test.yml?branch=main&label=tests&labelColor=211A11" alt="tests"></a>
+<a href="https://github.com/FirstCastSolutions423/carrel/releases"><img src="https://img.shields.io/github/v/release/FirstCastSolutions423/carrel?labelColor=211A11&color=F2A93C" alt="release"></a>
 
 </div>
 
@@ -45,12 +46,14 @@ carrel wraps the masters — pandoc, poppler, qpdf, tesseract/ocrmypdf, ImageMag
 
 ## Quickstart
 
-Requires Python ≥ 3.12 and [uv](https://docs.astral.sh/uv/). From a checkout of this repo:
+Requires Python ≥ 3.12 and [uv](https://docs.astral.sh/uv/). No checkout needed:
 
 ```sh
-uv tool install .     # puts `carrel` on your PATH
+uv tool install git+https://github.com/FirstCastSolutions423/carrel   # puts `carrel` on your PATH
 carrel doctor         # what can your desk do today? (+ apt hints for the rest)
 ```
+
+(Contributing or hacking on it? `uv tool install .` from a checkout does the same thing.)
 
 A first taste:
 
@@ -67,7 +70,7 @@ Add `--json` to any of these and you get machine-readable output on stable exit 
 This repo is also a Claude Code plugin marketplace: five plugins whose slash commands, agents, skills, and hooks all delegate to the CLI above.
 
 ```sh
-claude plugin marketplace add /path/to/this/repo   # e.g. ~/projects/toolkit-build
+claude plugin marketplace add FirstCastSolutions423/carrel
 claude plugin install carrel-inspect@carrel
 ```
 
@@ -79,7 +82,7 @@ claude plugin install carrel-inspect@carrel
 | `carrel-watch` | `/watch-folder` + a watch-automation recipe skill |
 | `carrel-agent` | A file-librarian agent, the carrel MCP server, and a hook that re-indexes files Claude writes |
 
-Install the CLI first (`uv tool install .`) so the plugins can call it. Works headless too:
+Install the CLI first (see [Quickstart](#quickstart)) so the plugins can call it. Works headless too:
 
 ```sh
 claude -p "/carrel-inspect:inspect text+image.pdf" --allowedTools "Bash(carrel:*)"
@@ -103,7 +106,7 @@ The flagship: a three-pane [Textual](https://textual.textualize.io/) desk. A fil
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — the adapter layer, the index, the plugin design
 - [docs/FEATURES.md](docs/FEATURES.md) — the capability × strategy matrix
 - [docs/TEST_REPORT.md](docs/TEST_REPORT.md) — everything above, executed for real (501 tests, 7 cookbook runs)
-- [examples/cookbook/](examples/cookbook/) — seven end-to-end recipes, from scan→searchable-notes to markdown→audiobook
+- [examples/cookbook/](examples/cookbook/) — nine end-to-end recipes, from scan→searchable-notes to markdown→audiobook
 - [docs/BRAND.md](docs/BRAND.md) — palette, typography, logo usage, voice
 
 ## License
