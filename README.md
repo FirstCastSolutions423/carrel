@@ -9,6 +9,20 @@
 <a href="https://github.com/FirstCastSolutions423/carrel/actions"><img src="https://img.shields.io/github/actions/workflow/status/FirstCastSolutions423/carrel/test.yml?branch=main&label=tests&labelColor=211A11" alt="tests"></a>
 <a href="https://github.com/FirstCastSolutions423/carrel/releases"><img src="https://img.shields.io/github/v/release/FirstCastSolutions423/carrel?labelColor=211A11&color=F2A93C" alt="release"></a>
 
+<br><br>
+
+<img src="assets/demo/desk-tour.gif" alt="carrel desk TUI tour" width="100%">
+
+*`carrel desk` — browse the tree, inspect a file, run an action, search the index.*
+
+<img src="assets/demo/pack.gif" alt="carrel pack token stats" width="100%">
+
+*`carrel pack src --stats` — the token table, before you spend a context window on it.*
+
+<img src="assets/demo/redact-proof.gif" alt="carrel redact proof" width="100%">
+
+*`carrel redact` — true raster redaction of a PDF, and the proof: `grep` exits 1.*
+
 </div>
 
 A *carrel* is a private study desk in a library: your materials close at hand, organized your way. **carrel** is that desk for your local files — pdf, md, images, html, json, xml, csv — with 24 commands to convert, OCR, inspect, diff, index, search, pack, watch, and more. And it treats AI agents as first-class users of the desk: every data-producing command speaks `--json` with stable exit codes, `carrel pack` turns file trees into LLM-ready context, and the repo doubles as a [Claude Code plugin marketplace](#the-marketplace) whose plugins drive the same CLI.
