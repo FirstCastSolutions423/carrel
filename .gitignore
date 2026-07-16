@@ -8,3 +8,6 @@ build/
 *.egg-info/
 .coverage
 node_modules/
+.carrel/
+carrel-out/
+site/
