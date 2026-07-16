@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "carrel": {
+      "command": "carrel",
+      "args": ["mcp"]
+    }
+  }
+}

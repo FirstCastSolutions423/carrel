@@ -1,0 +1,8 @@
+{
+  "name": "carrel-watch",
+  "description": "Watch folders and run carrel actions on file events: /watch-folder plus a watch-automation recipe skill.",
+  "version": "0.1.0",
+  "author": { "name": "Colton Bearden" },
+  "license": "MIT",
+  "keywords": ["files", "watch", "automation", "watchdog", "folder-actions"]
+}

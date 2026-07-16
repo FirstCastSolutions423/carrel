@@ -5,8 +5,8 @@
 
 ## Now
 
-- **Phase:** 4 — Waves 1-2 DONE (convert, ocr, inspect, diff, index/search/tag/note added; 318+ tests green; core fix: click Exit passthrough in main()). Wave 3 dispatching.
-- **Next:** Wave 3: thumb/extract-images/proof/color, watch/organize/dedupe, redact/sign/form, marketplace+plugins.
+- **Phase:** 4 — Waves 1-3 DONE — **MVP line crossed**: 20 commands live, marketplace validates (claude plugin validate ✔), 470 tests green. Wave 4 (flagship) dispatching.
+- **Next:** Wave 4: audiobook, desk TUI, snippets/cookbook seeds, integration review sweep.
 
 ## Done
 

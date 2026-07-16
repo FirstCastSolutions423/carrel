@@ -20,10 +20,10 @@ Waves of ≤4 parallel subagents. Owner types from `.claude/agents/`. Every task
 
 ## Wave 3 — media, automation, documents (need fixtures; marketplace independent)
 
-- [ ] W3.1 thumb + extract-images + proof + color — **module-builder** — specs/07 — size M
-- [ ] W3.2 watch + organize + dedupe — **module-builder** — specs/08 — size M
-- [ ] W3.3 redact + sign + form — **module-builder** — specs/10 — size L
-- [ ] W3.4 marketplace + 5 plugins — **module-builder** — specs/12 — size M
+- [x] W3.1 thumb + extract-images + proof + color — **module-builder** — specs/07 — size M
+- [x] W3.2 watch + organize + dedupe — **module-builder** — specs/08 — size M
+- [x] W3.3 redact + sign + form — **module-builder** — specs/10 — size L
+- [x] W3.4 marketplace + 5 plugins — **module-builder** — specs/12 — size M
 
 ════════ **MVP LINE** — everything above must pass before anything below is attempted ════════
 
