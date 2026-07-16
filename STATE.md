@@ -5,8 +5,8 @@
 
 ## Now
 
-- **Phase:** 4 — DONE. All 4 waves complete: 24 commands, desk TUI, marketplace (5 plugins, validate ✔), snippets, 6 cookbook recipes all executed. Review findings fixed (organize.md drift, pack exit-4, audiobook --force, manifest self-exclusion).
-- **Next:** Phase 5 — TEST_REPORT.md, marketplace install proof, remaining E2E.
+- **Phase:** 5 — DONE. 501 tests green; 7 cookbook recipes executed; marketplace added+installed+slash command run headlessly (proof in docs/TEST_REPORT.md); carrel on PATH via uv tool install.
+- **Next:** Phase 6 — brand assets, README, docs package, then Phase 7 finalize.sh.
 
 ## Done
 
