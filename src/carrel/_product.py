@@ -9,7 +9,7 @@ PRODUCT = {
     "cli": "carrel",
     "package": "carrel",
     "marketplace": "carrel",
-    "repository": "",
+    "repository": "https://github.com/FirstCastSolutions423/carrel",
     "license": "MIT",
     "author": "Colton Bearden"
 }
