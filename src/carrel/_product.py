@@ -1,0 +1,15 @@
+"""GENERATED from /product.json by scripts/sync_product.py — do not edit."""
+
+PRODUCT = {
+    "name": "carrel",
+    "displayName": "Carrel",
+    "tagline": "A library desk for your files — and your agents.",
+    "description": "Local file toolkit for pdf/md/images/html/json/xml/csv: convert, OCR, inspect, index, search, pack for LLM context, watch, and more — plus a built-in Claude Code plugin marketplace.",
+    "version": "0.1.0",
+    "cli": "carrel",
+    "package": "carrel",
+    "marketplace": "carrel",
+    "repository": "",
+    "license": "MIT",
+    "author": "Colton Bearden"
+}

@@ -5,8 +5,8 @@
 
 ## Now
 
-- **Phase:** 1 — DONE (product: carrel). Next: Phase 2 architecture+specs+scaffold.
-- **Next:** docs/ARCHITECTURE.md, specs/, repo skeleton, marketplace manifests, .claude/agents. Then phase(2) commit.
+- **Phase:** 2 — DONE (architecture, 15 specs, walking skeleton: core lib + CLI boot verified, deps installed via uv). Next: Phase 3 build plan.
+- **Next:** docs/BUILD_PLAN.md with waves + MVP line, then dispatch Wave 1 (fixtures + core tests + first command modules).
 
 ## Done
 

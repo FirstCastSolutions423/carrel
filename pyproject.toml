@@ -1,0 +1,35 @@
+[project]
+name = "carrel"
+version = "0.1.0"
+description = "A library desk for your files — and your agents. Local file toolkit for pdf/md/images/html/json/xml/csv: convert, OCR, inspect, index, search, pack for LLM context, watch, and more — plus a built-in Claude Code plugin marketplace."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Colton Bearden" }]
+dependencies = [
+    "click>=8.1",
+    "rich>=13.0",
+    "pypdf>=5.0",
+    "pillow>=10.0",
+    "reportlab>=4.0",
+    "watchdog>=4.0",
+    "markdown-it-py>=3.0",
+    "textual>=1.0",
+]
+
+[project.scripts]
+carrel = "carrel.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/carrel"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
